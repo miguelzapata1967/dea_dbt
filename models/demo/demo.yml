@@ -17,7 +17,9 @@ models:
         data_tests: 
           - salary_check
   - name: customer
-    description: 'DBT Model for customer table' 
+    description: 'DBT Model for customer table'
+  - name: customer_vw
+    description: 'DBT Model for customer view table'
          
 sources:
   - name: employee
