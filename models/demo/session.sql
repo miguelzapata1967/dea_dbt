@@ -22,4 +22,4 @@ with session_src as
    left join {{ref('country_code')}} b 
    on a.COUNTRY_CODE = b.COUNTRY_CODE 
 ) 
-select * from session_src 
+select * from session_src  
