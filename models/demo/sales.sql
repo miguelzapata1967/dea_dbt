@@ -18,7 +18,7 @@ with sales_src as
    TOTAL_AMOUNT, 
    CREATED_AT, 
    CURRENT_TIMESTAMP AS INSERT_DTS 
-   from  DBT_DB.PUBLIC.SALES_SRC
+   from  {{source('sales','SALES_SRC')}}
  
    {% if is_incremental() %} 
    where CREATED_AT > (select max(INSERT_DTS) from {{this}}) 
