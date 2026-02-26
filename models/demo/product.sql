@@ -21,4 +21,4 @@ with product_src as (
     {% endif %}
 )
 
-select * from product_src
+select * from product
